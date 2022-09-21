@@ -1,0 +1,18 @@
+.myName{
+    background: rgba(122, 122, 122, 0.7);
+}
+ul>li{
+    color: steelblue;
+}
+li:first-child {
+    color: red;
+}
+.info{
+    background: rgba(200, 180, 19, 0.7);
+}
+#emptyDiv{
+    height: 200px;
+    width: 50%;
+    background: linear-gradient(to right, rgb(200,130,12), rgba(255,0,0,0));
+
+}
