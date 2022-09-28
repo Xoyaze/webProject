@@ -1,5 +1,8 @@
 .myName{
-    background: rgba(122, 122, 122, 0.7);
+    padding-top: 25px;
+    padding-left: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(76, 66, 86);
 }
 ul>li{
     color: steelblue;
@@ -9,10 +12,55 @@ li:first-child {
 }
 .info{
     background: rgba(200, 180, 19, 0.7);
+    height: 60px;
+}
+#info-details{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.table-title{
+    background: darkgoldenrod;
+    color:white;
+}
+#header{
+
+    height: 90px;
+    background: url(/html/back.jpg);
+
+
+}
+#another-empty{
+    height: 200px;
+    width: 80%;
+    background-color: rgba(200,130,12,0.7);
+    border: solid;
+    border-color: aqua;
+
+}
+#table-data{
+    background: darkgoldenrod;
+    color: rgb(250, 250, 250);
 }
 #emptyDiv{
-    height: 200px;
+    height: 100px;
     width: 50%;
     background: linear-gradient(to right, rgb(200,130,12), rgba(255,0,0,0));
-
+}
+#first-box{
+    margin-left: 120px;
+    margin-top: 20px;
+    height: 60px;
+    background-color: red;
+    width: 40%;
+}
+#second-box{
+    height: 60px;
+    width: 40%;
+    margin-left: 120px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: blue;
+}
+#table{
+    background: rgba(122, 122, 122, 0.6);
 }
