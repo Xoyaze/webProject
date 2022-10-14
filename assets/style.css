@@ -120,8 +120,8 @@ p{
 }
 
 .circle-body{
-    height: 700px;
-    width: 700px;
+    height: 107vh;
+    width: 52vw;
     display: flex;
 
     align-items: center;
@@ -455,7 +455,7 @@ p{
 
 .footer-container{
 
-    height: 150px;
+    height: 100px;
     width: 100%;
 
     display: flex;
@@ -540,27 +540,52 @@ p{
 
     height: 5px;
     width: 100%;
-    background: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0.8),rgba(255,255,255,0.6),rgba(255,255,255,0.4),rgba(255,255,255,0.2),rgba(255,255,255,0));      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
-    animation: lineAnimation 10s infinite ease;
+    background: rgba(0,0,0,0.4);
+}
+
+.foomation{
+
+    height: 2px;
+    width: 98%;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+
+    animation-name: bottomLine;
+    animation-duration: 5s;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: ease;
 
 }
 
-@keyframes lineAnimation{
+@keyframes bottomLine{
 
     0%{
-        background: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0.8),rgba(255,255,255,0.6),rgba(255,255,255,0.4),rgba(255,255,255,0.2),rgba(255,255,255,0));
+        width: 0%;
+        left: 0%;
     }
-    25%{
-        background: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,1),rgba(255,255,255,0.8),rgba(255,255,255,0.6),rgba(255,255,255,0.4),rgba(255,255,255,0));
+    35%{
+        width: 18%;
     }
-    50%{
-        background: linear-gradient(to right,rgba(255,255,255,0.6),rgba(255,255,255,0.8),rgba(255,255,255,1),rgba(255,255,255,0.7),rgba(255,255,255,0.4),rgba(255,255,255,0.1));
+    90%{
+        width: 8%;
+        left: 92%;
     }
-    75%{
-        background: linear-gradient(to right,rgba(255,255,255,0.2),rgba(255,255,255,0.4),rgba(255,255,255,0.6),rgba(255,255,255,0.8),rgba(255,255,255,1),rgba(255,255,255,0.8));
+    98%{
+        width: 5%;
+        left: 92%;
+    }
+    98%{
+        width: 4%;
+        left: 96%;
     }
     100%{
-        background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.2),rgba(255,255,255,0.4),rgba(255,255,255,0.6),rgba(255,255,255,0.8),rgba(255,255,255,1));
+        width: 2%;
+        left: 98%;
     }
 }

@@ -172,7 +172,7 @@ nav ul li a{
     height: 12px;
     background: lightgoldenrodyellow;
 
-    animation: adder 5s infinite linear;
+    animation: adder 5s infinite alternate;
 
 }
 
@@ -190,5 +190,4 @@ nav ul li a{
 
     text-align: left;
     color: lightcoral;
-
 }
