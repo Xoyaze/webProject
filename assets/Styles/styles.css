@@ -1,0 +1,240 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #8B0000;   
+}
+
+.body-design{
+    height: 80vh;
+    width: 40vw;
+    background-color: white;
+    rotate: 43deg;
+    margin-left: -20vw;
+    position: absolute;
+    box-shadow: 5px 5px 8px;
+}
+
+.top-header{
+    display: flex;
+    height: 100px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 9%;
+}
+
+.top-header h1{
+    color: aliceblue;
+    margin-right: 10px;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+}
+
+.underline{
+    margin-top: -2%;
+    margin-left: 20%;
+    height: 3px;
+    width: 80%;
+    background-color: black;
+}
+
+#profile-image img{
+    height: 90px;
+    width: 90px;
+    border-radius: 5%;
+    margin-left: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px;
+}
+
+.menu{
+    height: 200px;
+    width: 200px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    top: 48%;
+}
+
+.menu .toggle{
+    position: absolute;
+    top: 5%;
+    z-index: 3;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.menu .home-button{
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    transition: 0.5s;
+}
+
+.menu .info-button{
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu .contact-button{
+    position: absolute;
+    top: 5%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.menu.active .toggle{
+    transform: translateY(-90px);
+    background: none;
+}
+
+.menu.active .home-button{
+    transform: translateY(-50px);
+}
+
+.menu.active .contact-button{
+    transform: translateY(-10px);
+}
+
+.menu.active .info-button{
+    transform: translateY(30px);
+}
+
+.toggle-text{
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    top: 8%;       
+    left: 60%;
+    display: none;
+}
+
+.toggle:hover + .toggle-text{
+    display: block;
+}
+
+.menu.active .toggle + .toggle-text{
+    top: -37%;
+}
+
+.home-text{
+    height: 20px;
+    width: 45px;
+    position: absolute;
+    top: -17%;
+    left: 60%;
+    display: none;
+}
+
+.home-button:hover + .home-text{
+    display: block;
+}
+
+.contact-text{
+    height: 20px;
+    width: 55px;
+    position: absolute;
+    top: 3%;
+    left: 60%;
+    display: none;
+}
+
+.contact-button:hover + .contact-text{
+    display: block;
+}
+
+.info-text{
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    display: none;
+}
+
+.info-button:hover + .info-text{
+    display: block;
+}
+
+.mid-body{
+    height: 350px;
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pictures{
+    height: 300px;
+    width: 400px;
+    background: red;
+    margin-left: 10px;
+    margin-top: 2%;
+    box-shadow: 1px 2px 10px black;
+    animation: picture-slideshow 35s infinite ease;
+}
+
+@keyframes picture-slideshow{
+
+    0%{
+        background: url("/assets/slideshow/one.jpg");
+        background-size: 100% 100%;
+    }
+    10%{
+        background: url("/assets/slideshow/two.jpg");
+        background-size: 100% 100%;
+    }
+    20%{
+        background: url("/assets/slideshow/three.jpg");
+        background-size: 100% 100%;
+    }
+    40%{
+        background: url("/assets/slideshow/four.jpg");
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url("/assets/slideshow/six.jpg");
+        background-size: 100% 100%;
+    }
+    60%{
+        background: url("/assets/slideshow/seven.jpg");
+        background-size: 100% 100%;
+    }
+    70%{
+        background: url("/assets/slideshow/eight.jpg");
+        background-size: 100% 100%;
+    }
+    80%{
+        background: url("/assets/slideshow/nine.jpg");
+        background-size: 100% 100%;
+    }
+    90%{
+        background: url("/assets/slideshow/ten.jpg");
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("/assets/slideshow/eleven.jpg");
+        background-size: 100% 100%;
+    }
+}
+
+.text-part{
+    position: relative;
+    top: -10%;
+    height: 380px;
+    width: 40%;
+    margin-top: -2%;
+    font-size: 1.1em;
+}
+
+.text-part h3{
+    font-size: 2em;
+}

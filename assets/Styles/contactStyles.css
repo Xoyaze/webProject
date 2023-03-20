@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #8B0000;
+}
+
+.navigation-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+
+.navigation-bar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 10px;
+}
+
+.navigation-bar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.left-design{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: white ;
+    position: absolute;
+    top: -5%;
+    left: -20%;
+    z-index: -1;
+}
+
+.leftDesign-text{
+    position: absolute;
+    left: -4%;
+    top: 10%;
+    font-size: 7em;
+    color: #8B0000;
+}
