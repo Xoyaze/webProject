@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #8B0000;
+    background-color: rgb(94,0,0);
 }
 
 .navigation-bar{
@@ -31,13 +31,14 @@ body{
     position: absolute;
     top: -5%;
     left: -20%;
+    overflow: hidden;
     z-index: -1;
 }
 
 .leftDesign-text{
     position: absolute;
-    left: -4%;
-    top: 10%;
+    left: 35%;
+    top: 14%;
     font-size: 7em;
-    color: #8B0000;
+    color: rgb(64,0,0)
 }
