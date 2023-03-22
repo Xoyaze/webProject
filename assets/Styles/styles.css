@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -12,6 +16,9 @@ body{
     margin-left: -20vw;
     position: absolute;
     box-shadow: 5px 5px 8px;
+
+    animation: pageLoadAnimationDesign 1s ease;
+
 }
 
 .top-header{
@@ -29,6 +36,9 @@ body{
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 50px;
+
+    animation: pageLoadAnimationMid 1s ease;
+
 }
 
 .underline{
@@ -37,6 +47,8 @@ body{
     height: 3px;
     width: 80%;
     background-color: white;
+
+    animation: pageLoadAnimationUnderline 2s ease;
 }
 
 #profile-image img{
@@ -170,6 +182,8 @@ body{
     margin-top: 5%;
     display: flex;
     flex-direction: row-reverse;
+
+    animation: pageLoadAnimationMid 1s ease;
 }
 
 .pictures{
@@ -179,6 +193,34 @@ body{
     margin-top: 2%;
     box-shadow: 1px 2px 10px black;
     animation: picture-slideshow 35s infinite ease;
+}
+
+.text-part{
+    position: relative;
+    top: -10%;
+    height: 380px;
+    width: 40%;
+    margin-top: -2%;
+    font-size: 1.1em;
+    color: white;
+}
+
+.text-part h3{
+    font-size: 2em;
+}
+
+#info-section{
+    height: 200px;
+    width: 50%;
+    color: white;
+
+    position: relative;
+    left: 30%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes picture-slideshow{
@@ -225,16 +267,29 @@ body{
     }
 }
 
-.text-part{
-    position: relative;
-    top: -10%;
-    height: 380px;
-    width: 40%;
-    margin-top: -2%;
-    font-size: 1.1em;
-    color: white;
+@keyframes pageLoadAnimationDesign{
+    0%{
+        transform: rotate(43deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
-.text-part h3{
-    font-size: 2em;
+@keyframes pageLoadAnimationMid{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes pageLoadAnimationUnderline{
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translate(0px);
+    }
 }
