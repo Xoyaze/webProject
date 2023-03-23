@@ -1,7 +1,9 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(8,29,16);
+    background-color: rgb(5,3,15);
+
+    animation: pageLoadAnimationColor 2s ease;
 }
 
 .navigation-bar{
@@ -10,6 +12,8 @@ body{
     align-items: center;
     height: 90px;
     width: 100%;
+
+    animation: pageLoadAnimationHeader 1s ease;
 }
 
 .navigation-bar ul li{
@@ -23,9 +27,9 @@ body{
     color: white;
 }
 
-.left-design{
-    height: 500px;
-    width: 500px;
+.left-design{    
+    height: 85vh;
+    width: 40vw;
     border-radius: 50%;
     background-color: white ;
     position: absolute;
@@ -33,12 +37,52 @@ body{
     left: -20%;
     z-index: -1;
     overflow: hidden;
+
+    animation: pageLoadAnimationLeftDesign 2s ease;
 }
 
 .leftDesign-text{
     position: absolute;
     left: 42%;
-    top: 14%;
+    top: 15%;
     font-size: 7em;
-    color: rgb(0,19,8);
+    color: #07020D;
+
+    animation: pageLoadAnimationLeftText 2s ease;
+}
+
+@keyframes pageLoadAnimationColor{
+    0%{
+        background-color: rgb(7,2,13);
+    }
+    100%{
+        background-color: rgb(5,3,15);
+    }
+}
+
+@keyframes pageLoadAnimationLeftDesign{
+    0%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes pageLoadAnimationLeftText{
+    0%{
+        transform: scale(8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes pageLoadAnimationHeader{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }

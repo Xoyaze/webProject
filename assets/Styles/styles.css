@@ -2,10 +2,29 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 1.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #07020D;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(37,32,43);
+    border-radius: 1rem;
+    border: 0.5rem solid transparent;
+    background-clip: content-box;
+}
+
+
+
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #07020D;   
+    background-color: #07020D;
+
+    animation: pageLoadAnimationBody 2s ease;
 }
 
 .body-design{
@@ -18,7 +37,6 @@ body{
     box-shadow: 5px 5px 8px;
 
     animation: pageLoadAnimationDesign 1s ease;
-
 }
 
 .top-header{
@@ -210,13 +228,15 @@ body{
 }
 
 #info-section{
-    height: 200px;
-    width: 50%;
+    height: 70vh;
+    width: 60%;
     color: white;
 
+    padding: 10px;
+    box-shadow: 1px 1px 4px black;
+
     position: relative;
-    left: 30%;
-    top: 10%;
+    left: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,7 +298,7 @@ body{
 
 @keyframes pageLoadAnimationMid{
     0%{
-        transform: translateX(100px);
+        transform: translateX(-100px);
     }
     100%{
         transform: translate(0px);
@@ -287,9 +307,30 @@ body{
 
 @keyframes pageLoadAnimationUnderline{
     0%{
-        transform: translateX(300px);
+        transform: scale(0.2)
     }
     100%{
-        transform: translate(0px);
+        transform: scale(1);
+    }
+}
+
+@keyframes pageLoadAnimationBody{
+    0%{
+        background-color: rgb(37,32,43);
+    }
+    100%{
+        background-color: rgb(7,2,13);   
+    }
+}
+
+@media screen and (max-width: 990px){
+    .body-design{
+            height: 20vh;
+            width: 30vw;
+    }
+
+    .menu{
+        top: 12%;
+        left: -3%;
     }
 }
