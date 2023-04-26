@@ -219,3 +219,46 @@ video{
         transform: translateX(0px);
     }
 }
+
+@media screen and (max-width: 990px){
+    .left-design{
+            height: 40vh;
+            width: 30vw;
+    }
+    
+    .project img{
+        height: 20vh;
+    }
+
+    .project{
+        height: 20vh;
+    }
+
+    #first:hover{
+        height: 30vh;
+    }
+
+    #second:hover{
+        height: 30vh;
+    }
+
+    #third{
+        top: 40%;
+    }
+
+    #third:hover{
+        height: 30vh;
+    }
+
+    #fourth{
+        top: 40%;
+    }
+
+    #fourth:hover{
+        height: 30vh;
+    }
+
+    video{
+        height: 20vh;
+    }
+}
