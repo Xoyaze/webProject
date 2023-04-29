@@ -6,6 +6,7 @@ let thirdText = document.getElementsByClassName("thirdText");
 let firstImage = document.getElementById("firstProjectImage");
 let secondImage = document.getElementById("secondProjectImage");
 let fourthImage = document.getElementById("fourthProjectImage");
+let video = document.getElementById("video");
 
 let buttonOne = document.getElementById("buttonOne");
 let buttonThree = document.getElementById("buttonThree");
@@ -49,11 +50,13 @@ container[1].addEventListener('mouseleave',function(){
 
 container[2].addEventListener('mouseover',function(){
     thirdText[0].style.top = '70%';
+    video.style.backgroundColor = '#73A5A4';
 })
 
 container[2].addEventListener('mouseleave',function(){
     thirdText[0].style.opacity = '0';
     thirdText[0].style.top = '-100%';
+    video.style.backgroundColor = 'rgb(62,42,30)';
 })
 
 container[3].addEventListener('mouseover',function(){
