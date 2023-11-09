@@ -1,88 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html lang="en">
 <head>
-    <title>Prabhat Baduwal - Home</title>
-    <link rel="stylesheet" href="../assets/Styles/styles.css" type="text/css">
+    <title>Portfolio Redone</title>
+    <link rel="stylesheet" href="/resource/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis&family=Passions+Conflict&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis&family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Inconsolata:wght@200;400&family=Manrope&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>    
+    <div  id="landHome"></div>
+
+    <header>
+
+        <nav>
+            <div class="leftNavigation">
+                <!-- <h1>Prabhat Baduwal</h1> -->
+            </div>
+            <ul>
+                <li><a href="#landHome" class="navigationButton activeNavigator">Home</a></li>
+                <li><a href="#about" class="navigationButton">About</a></li>
+                <li><a href="#projects" class="navigationButton">Projects</a></li>
+                <li><a href="#contact" class="navigationButton">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
     <section id="home">
-        <header>
-            <main class="top-header">
-                <div id="profile-image"><img src="../assets/Prabhat.jpg" alt="profile-image"></div>
-                <div><h1>Prabhat Baduwal</h1></div>
-            </main>
-            <div class="underline"></div>
-    
-            <div class="body-design"></div>
-    
-            <div class="menu">
-                <div class="toggle"><img src="../assets/icons/menu.png" alt="menu"></div>   
-                <div class="toggle-text">Menu</div>
-                <div class="home-button"><a href="/src/projects.html"><img src="/assets/icons/projects.png" alt=""></a></div>
-                <div class="home-text">Projects</div>   
-                <div class="contact-button"><a href="/src/contact.html"><img src="../assets/icons/contact.png" alt=""></a></div>
-                <div class="contact-text">Contact</div>
-                <div class="info-button"><a href="#info-section"><img src="../assets/icons/info.png" alt=""></a></div>
-                <div class="info-text">Info</div>
-    
-            </div>    
-    
-    
-        </header>
-    
-        <div class="mid-body">
-            <div class="pictures"></div>
-            <div class="text-part">
-                <h3>Love Stars!</h3>
-                <p>I'm a fan of stars, often find myself looking at them. Well, when I'm out of valley at least cause it's not that visible inside the valley.These are some of the pictures I took while I was out, took it with my smartphone actually. Not a photographer but I think I managed to take some good shots of it.</p>
-                
-                <p>Stars that are light years away from us could actually be in a completely different state than how we see them now because we only see the light that left them years and years ago.</p>
-    
-                <p>UY Scuti, a star that's about 9500 lightyears away from us takes about 9500 years for the light from there to reach us here, which means we see the UY Scuti how it was about 9500 years ago.</p>
-    
-                <p>Imagine UY Scuti sitting right where the sun is. It is 1700 times larger than our sun. It would reach jupiter just sitting where our sun is. Love space.</p>
-    
-            </div> 
+
+        <img src="/assets/Images/newBackgrounds/BackgroundStars.png" alt="" class="bodyBackgroundImages" id="backgroundStars">
+        <img src="/assets/Images/newBackgrounds/BackgroundMoon.png" alt="" class="bodyBackgroundImages" id="backgroundMoon">
+        <img src="/assets/Images/newBackgrounds/MidBackgroundLeft.png" alt="" class="bodyBackgroundImages" id="midBackgroundLeft">
+        <img src="/assets/Images/newBackgrounds/MidBackgroundRight.png" alt="" class="bodyBackgroundImages" id="midBackgroundRight">
+        <img src="/assets/Images/newBackgrounds/foreGround2.png" alt="" class="bodyBackgroundImages" id="foreGroundTwo">
+        <img src="/assets/Images/newBackgrounds/foreGround.png" alt="" class="bodyBackgroundImages" id="foreGround">
+
+        <div class="greetingCard" id="greetingCard">
+            <div class="upperGreet">
+                <img src="/assets/profileImages/Prabhat.jpg" alt="profilePicture" draggable="false">
+                <h1>Welcome to my webpage! </h1>
+            </div>
+            <div class="underLine">
+                .
+            </div>
+            <div class="lowerGreet">
+                <p>I am excited to take you on a journey through my creative endeavors. As a passionate and dedicated individual, I have channeled my skills, experiences, and aspirations into various projects and accomplishments, which I am proud to present here. <br>  <br>Feel free to explore various sections of this webpage to gain insights into my skills, achievements, and the projects I've undertaken. Thank you for visiting, and I hope that this collection of my work will give you a glimpse into who I am and what I can bring to the table. If you have any questions or would like to connect, please don't hesitate to reach out. Your interest in my journey means the world to me, and I look forward to connecting with you.</p>
+                <p>In this digital journey, I've followed a diverse group of inspiring minds, each with their unique perspectives and passions. From innovators and creators to thought leaders and experts, these are the voices that fuel my curiosity and drive my learning. They've help me explore the world through their insights and expertise.</p>
+                <button id="seePeopleButton">See the people I follow.</button>
+            </div>
         </div>
+        <div class="slidingCardsContainer" id="cardsContainer">
+            <ul class="slidingCards">
+                <li class="card" id="firstCard">
+                    <div class="cardImage"><img src="/assets/Images/roleModels/vSauce.jpg" alt=""></div>
+                    <h2>Michael Stevens</h2>
+                    <p>“The next time you’re a little bored, be proud. Thank your ancestors. You are participating in a life improving drive, like hunger or thirst, that pushes us toward new and better things.”</p>
+                </li>
+                <li class="card">
+                    <div class="cardImage"><img src="/assets/Images/roleModels/veritasium.jpg" alt=""></div>
+                    <h2>Derek Muller</h2>
+                    <p>"If your brain is always consumed with other stimuli, you'll rarely ponder the bigger picture and set long-term goals for yourself and consider how to achieve them."</p>
+                </li>
+                <li class="card">
+                    <div class="cardImage"><img src="/assets/Images/roleModels/johnnyHarris.jpg" alt=""></div>
+                    <h2>Johnny Harris</h2>
+                    <p>“Maps are political. They're impossible not to be. When you draw a line, you are saying this is the way it should be.”</p>
+                </li>
+                <li class="card">
+                    <div class="cardImage"><img src="/assets/Images/roleModels/networkChuck.jpg" alt=""></div>
+                    <h2>Network Chuck</h2>
+                    <p>Also a youtuber like the ones above, he taught me how to use linux, and a lot about networking.</p>
+                </li>
+                <li class="card">
+                    <div class="cardImage"><img src="/assets/Images/roleModels/damonFryer.jpg" alt=""></div>
+                    <h2>Damon Fryer</h2>
+                    <p>"I think for me personally,I was really good at developing relationships with people. That always created a lot of sales for me honestly and even holds true to this day where my business is currently a lot of relationship building."</p>
+                </li>
+                <li class="card">
+                    <div class="cardImage"><img src="/assets/Images/roleModels/stradman.jpg" alt=""></div>
+                    <h2>James Stradman</h2>
+                    <p>"Every single dumb decisions that I have made in my entire life has led me to this exact moment in time."</p>
+                </li>
+            </ul>
 
+        </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="info-section">
-        <h3>About this website!</h3>
-        <p>This website is on progress...</p>
-        <p>I've been learning about websites since I was a kid. Did some html when I was maybe in the 6th grade, never been confident though. I had some idea on how a typical website works or how it is actually built but I didn't know how to build one for myself. I found out, how you can have free webhosting and a free domain name as well through a program hosted by my college. I then started learning HTML first and then CSS, watched alot of videos on youtube, read codes online trying to learn them and understand how they work, downloaded some of demo website codes to know how people build websites and learn from it by changing, removing, or adding stuffs. But whatever I did, never learned more from anywhere other than <a style="color: white; text-decoration: none;" target="_blank" href="https://www.youtube.com/watch?v=qz0aGYrrlhU">youtube. </a></p>
-        <p>Although it may look neat, this website, I find it challenging to work on building seemlessly responsive websites. There are multiple ideas and lessons I yet need to learn, but I am happy with what I can build. I am not stoping though, I know I've just started this and I'm happy to learn more and more everday.</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <section id="about">
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <h1 class="sectionHeading">About this website.</h1>
+        <br><br>
+        <div class="aboutSectionHalves">
+            <div class="aboutSectionTopLeft">
+                <h2>What you'll find here.</h2>
+                <ul>
+                    <li>About me and my interests.</li>
+                    <li>My skills and my perspective of things.</li>
+                    <li>Projects that I put my heart and soul into.</li>
+                    <li>Contact information, as a way to connect.</li>
+                </ul>
+            </div>
+            <div class="aboutSectionTopRight">   
+                <h2>Who am I ?</h2>
+                <ul>
+                    <li>A student, studying my way through IT and the diverse world within it.</li>
+                    <li>A chill dude, who appreciates music and is typically friendly.</li>
+                </ul>
+            </div>
+        </div>
+        <br><br>
+        <div class="aboutSectionHalves">
+            <div class="aboutSectionTopLeft">
+                <h2>Why connect with me.</h2>
+                <ul>
+                    <li>Connecting with me means stepping into a world of shared experiences, knowledge, and inspiration. If you're looking for supportive and engaging community of like-minded individuals.</li>
+                    <li>Merging skills and our perspective of things may benefit both of us.</li>
+                </ul>
+            </div>
+            <div class="aboutSectionTopRight">   
+                <h2>This website</h2>
+                <ul>
+                    <li>Some images used in this website such as background images, weather icons, are owned by the respective owners at <a href="https://support.freepik.com/s/article/Attribution-How-when-and-where?language=en_US&_gl=1*7xvux5*_ga*MTkyOTMxODYzMy4xNjY1MDY5NDkx*_ga_QWX66025LC*MTY5OTU0MDQ2Ni40LjEuMTY5OTU0MDQ3Ny40OS4wLjA.*_ga_18B6QPTJPC*MTY5OTU0MDQ2Ni41LjEuMTY5OTU0MDQ3Ny40OS4wLjA." target="_blank">freepik</a>'s website. All credits goes to the respective owners of the images.</li>
+                    <li>This website is not responsive yet, therefore it may not be usable in tablets and mobile phones</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="sectionHeading">Projects</h1>
+        <h1>Weather web application</h1>
+        <div class="webAppContainer">
+            <div class="webAppLeftSide">
+                <div class="weatherImageBackground">
+                    <img src="/assets/Images/weatherImages/haze.png" alt="" id="weatherImage">
+                </div>
+                <div class="weatherDetails">
+                    <div class="forCityName detailCard">
+                        <h1>Country/City</h1>
+                        <h2 id="displayedCityName">Initialize</h2>
+                    </div>
+                    <div class="forTemperature detailCard">
+                        <h1>Temperature</h1>
+                        <h2 id="mainTemperature">0°C</h2>
+                    </div>
+                    <div class="forFeelsLike detailCard">
+                        <h1>Feels like</h1>
+                        <h2 id="feelsLikeTemperature">0°C</h2>
+                    </div>  
+                </div>
+            </div>
+            <div class="webAppRightSide">
+                <div class="upperDetailsPart">
+                    <input type="text" name="cityName" placeholder="Enter your city/country name." id="cityName">
+                    <img src="/assets/Images/weatherImages/searchIcon.png" alt="" class="searchButton">
+                </div>
+                <div class="lowerDetailsPart">
+                    <div class="lowerLeftDetailsPart">
+                        <div class="lowerDetailsPartTop">
+                            <h1>Humidity</h1>                            
+                            <div class="humidityLoaderBackground">
+                                <div class="humidityLoader"></div>
+                            </div>
+                            <div class="humidityLoaderEdge"></div>
+                            <div class="humidityForeground">
+                                <h2 id="mainHumidity">0%</h2>
+                            </div>
+                        </div>
+                        <div class="lowerDetailsPartBottom">
+                            <h2>Some weather facts:</h2>
+                            <ul>
+                                <li>A bolt of lightning can be hotter than the surface of the sun</li>
+                                <li>Hailstones can reach speeds of up to 100 mph (161 km/h) as they fall from the sky.</li>
+                                <li>Lightning strikes the Earth around 8 million times a day.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lowerRightDetailsPart">
+                        <div class="lowerRightBottomWeatherDetails">
+                            <div class="forWeatherName detailCardRightSide">
+                                <h1>Weather</h1>
+                                <h2 id="weatherForScript">None</h2>
+                            </div>
+                            <div class="forWeatherName detailCardRightSide">
+                                <h1>Wind speed</h1>
+                                <h2 id="windSpeed">0 Km/h</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    <script>
-        let toggle = document.querySelector('.toggle');
-        let menu = document.querySelector('.menu');
-            toggle.onclick = function(){
-            menu.classList.toggle('active')
-        }
-    </script>
+    <section id="contact">
+        <h1 class="sectionHeading">Contact</h1>
 
+        <div class="sectionerContact">
+            <form action="https://formspree.io/f/mnqkryda" method="POST">
+                <input type="text" name="name" id="name" required>
+                <label for="name" id="nameLabel">Your Name</label><br><br>
+
+                <input type="number" name="number" id="number" required>
+                <label for="number" id="contactLabel">Your Contact Number</label><br><br>
+                
+                <input type="email" name="email" id="email" required>
+                <label for="email" id="emailLabel">Email Address</label><br><br>
+                
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <label for="message" id="messageLabel">Write a message</label> <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div class="pictureSlideShowContainer">
+                <div class="starsImageContainer"></div>
+                <h3 style="color: gray">I'm not a photographer but here are some pictures I captured using my phone.</h3>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="mobileMessage">Hello</div>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/resource/script.js"></script>
 </body>
+
 </html>
