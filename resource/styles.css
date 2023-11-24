@@ -3,10 +3,58 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    /* background-color: black; */
+    background-color: rgb(20,20,65);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0,0,65);
+    border-radius: 1rem;
+    border: 0.1rem solid transparent;
+    /* background-clip: content-box; */
+}
+
+.preLoader{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.preLoaderRef p, 
+.preLoaderRef p a{
+    color: rgba(255,255,255,.1);
+    text-decoration: none;
+}
+
+.preLoaderItself img{
+    height: 50vh;
+}
+
+.preLoaderRef{
+    position: fixed;
+    bottom: 0%;
+    right: 5%;
+}
+
 body{
     font-family: 'Edu TAS Beginner', cursive;
     font-family: 'Inconsolata', monospace;
-    background-color: rgb(0,0,65);
+    background-color: rgb(17,2,54);
     overflow-x: hidden;
 }
 
@@ -156,7 +204,6 @@ header nav ul li a.activeNavigator{
     height: 50vh;
     width: 100vw;
     top: 25%;
-    left: -2%;
     
     animation: pageLoadForegroundTwo 1.5s ease;
     
@@ -450,7 +497,8 @@ header nav ul li a.activeNavigator{
     align-items: center;
     flex-direction: column;
     color: white;
-    background-color: rgb(0,0,65);
+    /* background-color: rgb(0,0,65); */
+    background-color: rgb(17,2,54);
 }
 
 .webAppContainer{
@@ -728,10 +776,12 @@ header nav ul li a.activeNavigator{
     justify-content: center;
     align-items: center;
     color: white;
-    /* background-color: red; */
     height: 100vh;
     width: 100vw;
+
+    background-color: rgb(17,2,54);
 }
+
 
 .sectionerContact{
     height: 100%;

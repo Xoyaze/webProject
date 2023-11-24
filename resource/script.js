@@ -1,3 +1,13 @@
+//for the preLoader
+var preLoaderContainer = document.getElementsByClassName('preLoader');
+window.addEventListener('load', () => {
+    //for when the page loads 
+    preLoaderContainer[0].style.display = "none";
+    setTimeout( () =>{
+        greetingCard.classList.add("active");
+    }, 1500);
+});
+
 //for the left greeting card
 var greetingCard = document.getElementById("greetingCard");
 var greeter = document.querySelector(".greetingCard");
@@ -45,11 +55,6 @@ navigationButtons[3].onclick = () => {
 }
 
 
-//for when the page loads 
-setTimeout(starter, 1500);
-function starter(){
-    greetingCard.classList.add("active");
-}
 
 //for the background card animation 
 var backgroundStars = document.getElementById('backgroundStars');
@@ -62,7 +67,6 @@ var foreground = document.getElementById('foreGround');
 window.addEventListener('scroll', () => {
 
     let value = window.scrollY;
-    console.log(value);
     backgroundMoon.style.top = value * -.8 + 'px';
 
     if(value < 10){
@@ -178,11 +182,9 @@ cardsContainer.addEventListener('mouseup', mouseIsUp);
 cardsContainer.addEventListener('mouseleave', mouseIsUp);
 cardsContainer.addEventListener('mouseleave', () => {
     startScroll();
-    console.log("mouse has left");
 });
 cardsContainer.addEventListener('mouseenter', () => {
     stopAutoScroll();
-    console.log("mouse has entered");
 });
 cardsContainer.addEventListener('mousemove', mouseIsMovingInsideContainer);
 
@@ -216,7 +218,6 @@ async function checkWeather(){
     let responseData = await response.json();
     
     
-    console.log(responseData);
     if(responseData.name == undefined){
         displayedCityName.innerHTML = "Not found."
         humidity.innerHTML = "0%";
@@ -247,7 +248,7 @@ async function checkWeather(){
 
     function weatherImageChange(source){
         weatherImage.style.transform = "translateX(150%)";
-        setTimeout(callImage, 850, source);
+        setTimeout(callImage, 1050, source);
     }
 
     function callImage(source){
