@@ -159,8 +159,6 @@ header nav ul li a.activeNavigator{
     width: 130vw;
     top: 0%;
     left: -10%;
-
-    /* animation: pageLoadBackgroundStars 2s ease; */
 }
 
 #backgroundMoon{
@@ -170,9 +168,10 @@ header nav ul li a.activeNavigator{
     width: 10vw;
     top: 0%;
     left: 35%;
-    
-    animation: pageLoadBackgroundMoon 1.8s ease;
-    
+}
+
+#backgroundMoon.activeOne{
+    animation: pageLoadBackgroundMoon 1.8s ease;   
 }
 
 #midBackgroundLeft{
@@ -182,7 +181,9 @@ header nav ul li a.activeNavigator{
     width: 70vw;
     top: 12%;
     left: -2%;
+}
 
+#midBackgroundLeft.activeTwo{
     animation: pageLoadMidBackgroundLeft 1.4s ease;
 }
 
@@ -193,9 +194,10 @@ header nav ul li a.activeNavigator{
     width: 105vw;
     top: 0%;
     left: 0%;
-    
+}
+
+#midBackgroundRight.activeThree{
     animation: pageLoadMidBackgroundRight 1.2s ease;
-    
 }
 
 #foreGroundTwo{
@@ -204,9 +206,10 @@ header nav ul li a.activeNavigator{
     height: 50vh;
     width: 100vw;
     top: 25%;
-    
+}
+
+#foreGroundTwo.activeFour{
     animation: pageLoadForegroundTwo 1.5s ease;
-    
 }
 
 #foreGround{
@@ -216,18 +219,12 @@ header nav ul li a.activeNavigator{
     width: 102vw;
     top: -45%;
     left: -2%;
-    
-    animation: pageLoadForeground 1.7s ease;
-    
 }   
-@keyframes pageLoadBackgroundStars{
-    0%{
-        top: 5%;
-    }
-    100%{
-        top: 0%;
-    }
+
+#foreGround.activeFive{
+    animation: pageLoadForeground 1.7s ease;
 }
+
 @keyframes pageLoadBackgroundMoon{
     0%{
         top: 60%;

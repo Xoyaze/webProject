@@ -1,3 +1,32 @@
+//for the background animation 
+var backgroundStars = document.getElementById('backgroundStars');
+var backgroundMoon = document.getElementById('backgroundMoon');
+var midBackgroundLeft = document.getElementById('midBackgroundLeft');
+var midBackgroundRight = document.getElementById('midBackgroundRight');
+var foregroundTwo = document.getElementById('foreGroundTwo');
+var foreground = document.getElementById('foreGround');
+
+window.addEventListener('scroll', () => {
+
+    let value = window.scrollY;
+    backgroundMoon.style.top = value * -.8 + 'px';
+
+    if(value < 10){
+        midBackgroundLeft.style.left = '-2%';
+    }else{
+        midBackgroundLeft.style.left = value * -1 + 'px';
+    }
+    midBackgroundRight.style.left = value * .4 + 'px';
+
+    if(value < 240){
+        greetingCard.style.opacity = '1';
+    }else{
+        greetingCard.style.opacity = '0';
+        cardToggled = false;
+        cardsContainer.classList.remove('activated');
+    }
+});
+
 //for the preLoader
 var preLoaderContainer = document.getElementsByClassName('preLoader');
 window.addEventListener('load', () => {
@@ -6,6 +35,11 @@ window.addEventListener('load', () => {
     setTimeout( () =>{
         greetingCard.classList.add("active");
     }, 1500);
+    backgroundMoon.classList.add("activeOne");
+    midBackgroundLeft.classList.add("activeTwo");
+    midBackgroundRight.classList.add("activeThree");
+    foregroundTwo.classList.add("activeFour");
+    foreground.classList.add("activeFive");
 });
 
 //for the left greeting card
@@ -53,44 +87,6 @@ navigationButtons[3].onclick = () => {
     }
     navigationButtons[3].classList.add('activeNavigator');
 }
-
-
-
-//for the background card animation 
-var backgroundStars = document.getElementById('backgroundStars');
-var backgroundMoon = document.getElementById('backgroundMoon');
-var midBackgroundLeft = document.getElementById('midBackgroundLeft');
-var midBackgroundRight = document.getElementById('midBackgroundRight');
-var foregroundTwo = document.getElementById('foreGroundTwo');
-var foreground = document.getElementById('foreGround');
-
-window.addEventListener('scroll', () => {
-
-    let value = window.scrollY;
-    backgroundMoon.style.top = value * -.8 + 'px';
-
-    if(value < 10){
-        midBackgroundLeft.style.left = '-2%';
-    }else{
-        midBackgroundLeft.style.left = value * -1 + 'px';
-    }
-    midBackgroundRight.style.left = value * .4 + 'px';
-
-    if(value < 240){
-        greetingCard.style.opacity = '1';
-    }else{
-        greetingCard.style.opacity = '0';
-        cardToggled = false;
-        cardsContainer.classList.remove('activated');
-    }
-});
-
-
-
-
-
-
-
 
 
 //for auto scrolling card animation
