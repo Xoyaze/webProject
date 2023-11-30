@@ -8,7 +8,6 @@ html{
 }
 
 ::-webkit-scrollbar-track{
-    /* background-color: black; */
     background-color: rgb(20,20,65);
 }
 
@@ -16,7 +15,6 @@ html{
     background-color: rgb(0,0,65);
     border-radius: 1rem;
     border: 0.1rem solid transparent;
-    /* background-clip: content-box; */
 }
 
 .preLoader{
@@ -73,10 +71,6 @@ header{
     top: 0%;
 }
 
-header nav img{
-    height: 12vh;
-    box-shadow: 4px 4px 10px black;
-}
 
 header nav{
     z-index: 1000;
@@ -933,4 +927,73 @@ form button:active{
 #message:valid~#messageLabel{
     top: -31%;
     color: white;
+}
+
+
+@media only screen and (max-width: 600px), 
+(min-width: 577px) and (max-width: 768px), 
+(min-width: 769px) and (max-width: 992px), 
+(min-width: 993px) and (max-width: 1200px) 
+{
+
+    header nav{
+        display: none;
+    }
+
+    #home{
+        display: none;
+    }
+
+    #about{
+        display: none;
+    }
+
+    #projects{
+        display: none;
+    }
+
+    #contact{
+        display: none;
+    }
+    
+    body{
+        background: radial-gradient(circle,rgba(0,0,0,.9),rgba(0,0,0,1));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .displayNotSupported{
+        height: 40vh;
+        width: 95vw;
+        background-color: rgba(0,0,0,.6);
+        color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        transition: all 300ms ease;
+    }
+
+    @keyframes amuser{
+        0%{
+            color: grey;
+        }
+        33%{
+            color: white;
+        }
+        66%{
+            color: darkslategrey;
+        }
+    }
+
+    .displayNotSupported:hover{
+        color: white;
+        animation: amuser 5s infinite alternate ease;
+
+        font-size: 1.02em;
+
+    }
 }
