@@ -481,7 +481,7 @@ header nav ul li a.activeNavigator{
 
 /* Pojects section starts here */
 #projects{
-    height: 100vh;
+    height: auto;
     width: 100%;
     margin-top: 10%;
     display: flex;
@@ -758,6 +758,67 @@ header nav ul li a.activeNavigator{
 .sectionHeading:hover{
     background-color: rgba(0,0,0,.1);
 }
+
+
+.other-project-container{
+    margin-top: 3%;
+    height: auto;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+}
+
+.other-project-card{
+    height: 70vh;
+    width: 24%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 5%;
+}
+
+.other-project-card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    transition: all 250ms ease;
+}
+
+.other-project-card h3, p, h5, a{
+    transition: all 250ms ease;
+}
+
+.other-project-card h5,a{
+    transform: translateY(-10px);
+}
+
+.other-project-card:hover > img{
+    transform: translate(30px, -30px);
+    box-shadow: 10px 10px 20px black;
+}
+
+.other-project-card:hover > h3{
+    transform: translateY(-20px);
+}
+
+.other-project-card:hover > p{
+    transform: translateY(-20px);
+}
+
+.other-project-card:hover > h5{
+    transform: translateY(-30px);
+}
+
+.other-project-card:hover > a{
+    transform: translateY(-30px);
+}
+
 /* Project section ends here */
 
 /* Contact section starts here */
